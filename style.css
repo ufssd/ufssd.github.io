@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background: slategray;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    min-height: 60px;
+    padding-top: 20px;
+    border-bottom: 5px solid cornflowerblue;
+}
+
+header li a {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#title {
+    float: left;
+}
+
+#title h1 {
+    margin: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+#title:hover, header li:hover a {
+    color: deepskyblue;
+    transition: all ease 0.2s;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+section {
+    flex: 1;
+    min-height: 400px;
+    background: url("images/background.jpg") no-repeat center center;
+}
+
+section h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+
+section p {
+    font-size: 20px;
+}
+
+footer {
+    min-height: 60px;
+    padding-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    display: inline;
+    padding: 0 20px;
+}
+
+svg path {
+    fill: white;
+}
+
+svg:hover path {
+    fill: deepskyblue;
+    transition: all ease 0.2s;
+}
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    header #title, header nav, header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 30px;
+    }
+
+    section h1 {
+        margin-top: 40px;
+    }
+
+}
