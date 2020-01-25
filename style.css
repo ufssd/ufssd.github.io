@@ -29,8 +29,7 @@ a {
 }
 
 header {
-    min-height: 60px;
-    padding-top: 20px;
+    padding: 20px 0;
     border-bottom: 5px solid cornflowerblue;
 }
 
@@ -115,12 +114,9 @@ svg:hover path {
         width: 100%;
     }
 
-    header {
-        padding-bottom: 30px;
-    }
-
     section h1 {
         margin-top: 40px;
+        font-size: 36px;
     }
 
 }
